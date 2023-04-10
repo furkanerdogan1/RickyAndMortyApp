@@ -11,6 +11,8 @@
 		5FFACA9D29E436BE006507AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACA9C29E436BE006507AD /* ContentView.swift */; };
 		5FFACA9F29E436C1006507AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFACA9E29E436C1006507AD /* Assets.xcassets */; };
 		5FFACAA229E436C2006507AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFACAA129E436C2006507AD /* Preview Assets.xcassets */; };
+		5FFACAAE29E43DF7006507AD /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACAAD29E43DF7006507AD /* CharacterModel.swift */; };
+		5FFACAB029E43E77006507AD /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACAAF29E43E77006507AD /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		5FFACA9C29E436BE006507AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5FFACA9E29E436C1006507AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FFACAA129E436C2006507AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5FFACAAD29E43DF7006507AD /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		5FFACAAF29E43E77006507AD /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		5FFACA9929E436BE006507AD /* RickyAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
-				5FFACA9A29E436BE006507AD /* RickyAndMortyAppApp.swift */,
-				5FFACA9C29E436BE006507AD /* ContentView.swift */,
+				5FFACAA829E438E3006507AD /* App */,
+				5FFACAAB29E4391F006507AD /* Model */,
+				5FFACAAA29E43914006507AD /* View */,
+				5FFACAAC29E4392A006507AD /* Api */,
 				5FFACA9E29E436C1006507AD /* Assets.xcassets */,
 				5FFACAA029E436C2006507AD /* Preview Content */,
 			);
@@ -65,6 +71,38 @@
 				5FFACAA129E436C2006507AD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5FFACAA829E438E3006507AD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5FFACA9A29E436BE006507AD /* RickyAndMortyAppApp.swift */,
+				5FFACA9C29E436BE006507AD /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5FFACAAA29E43914006507AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5FFACAAB29E4391F006507AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FFACAAD29E43DF7006507AD /* CharacterModel.swift */,
+				5FFACAAF29E43E77006507AD /* LocationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FFACAAC29E4392A006507AD /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FFACAB029E43E77006507AD /* LocationModel.swift in Sources */,
+				5FFACAAE29E43DF7006507AD /* CharacterModel.swift in Sources */,
 				5FFACA9D29E436BE006507AD /* ContentView.swift in Sources */,
 				5FFACA9B29E436BE006507AD /* RickyAndMortyAppApp.swift in Sources */,
 			);
