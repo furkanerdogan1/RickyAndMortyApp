@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct LocationSchema: Codable {
-    let info: Info
-    let results: [Result]
+    let info: LocationSchemaInfo
+    let results: [LocationSchemaResult]
 }
 
 // MARK: - Info
-struct Info: Codable {
+struct LocationSchemaInfo: Codable {
     let count, pages: Int
     let next: String
     let prev: JSONNull?
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct LocationSchemaResult: Codable, Identifiable {
     let id: Int
     let name, type, dimension: String
     let residents: [String]
