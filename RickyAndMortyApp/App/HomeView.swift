@@ -104,6 +104,7 @@ struct HomeView: View {
             }
             
             .navigationBarTitle("Ricky And Morty", displayMode: .large)
+            
         }
     }
     

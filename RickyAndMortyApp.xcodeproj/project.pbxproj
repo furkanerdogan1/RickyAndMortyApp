@@ -22,6 +22,10 @@
 		5FFACAC729E6DF14006507AD /* CharacterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACAC629E6DF14006507AD /* CharacterHeaderView.swift */; };
 		5FFACACA29E6E00E006507AD /* GradientColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACAC929E6E00E006507AD /* GradientColorData.swift */; };
 		5FFACACC29E6E9AF006507AD /* CharacterSubDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACACB29E6E9AF006507AD /* CharacterSubDetailView.swift */; };
+		5FFACACE29E705DC006507AD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACACD29E705DC006507AD /* SplashView.swift */; };
+		5FFACAD129E70656006507AD /* 39133-the-morty-dance-loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FFACAD029E70656006507AD /* 39133-the-morty-dance-loader.json */; };
+		5FFACAD429E706C0006507AD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5FFACAD329E706C0006507AD /* Lottie */; };
+		5FFACAD629E7077A006507AD /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACAD529E7077A006507AD /* LottieAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,9 @@
 		5FFACAC629E6DF14006507AD /* CharacterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHeaderView.swift; sourceTree = "<group>"; };
 		5FFACAC929E6E00E006507AD /* GradientColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColorData.swift; sourceTree = "<group>"; };
 		5FFACACB29E6E9AF006507AD /* CharacterSubDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSubDetailView.swift; sourceTree = "<group>"; };
+		5FFACACD29E705DC006507AD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		5FFACAD029E70656006507AD /* 39133-the-morty-dance-loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "39133-the-morty-dance-loader.json"; sourceTree = "<group>"; };
+		5FFACAD529E7077A006507AD /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FFACAD429E706C0006507AD /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,7 @@
 				5FFACAAA29E43914006507AD /* View */,
 				5FFACAAC29E4392A006507AD /* Api */,
 				5FFACAC829E6DFF2006507AD /* Data */,
+				5FFACACF29E7063B006507AD /* Resources */,
 				5FFACA9E29E436C1006507AD /* Assets.xcassets */,
 				5FFACAA029E436C2006507AD /* Preview Content */,
 			);
@@ -101,6 +110,7 @@
 				5FFACA9A29E436BE006507AD /* RickyAndMortyAppApp.swift */,
 				5FFACAB929E4CB5E006507AD /* HomeView.swift */,
 				5FFACAC429E6DED7006507AD /* CharacterDetailView.swift */,
+				5FFACACD29E705DC006507AD /* SplashView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -111,6 +121,7 @@
 				5FFACABB29E4D7DE006507AD /* CharacterListView.swift */,
 				5FFACAC629E6DF14006507AD /* CharacterHeaderView.swift */,
 				5FFACACB29E6E9AF006507AD /* CharacterSubDetailView.swift */,
+				5FFACAD529E7077A006507AD /* LottieAnimationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +175,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		5FFACACF29E7063B006507AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FFACAD029E70656006507AD /* 39133-the-morty-dance-loader.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +199,9 @@
 			dependencies = (
 			);
 			name = RickyAndMortyApp;
+			packageProductDependencies = (
+				5FFACAD329E706C0006507AD /* Lottie */,
+			);
 			productName = RickyAndMortyApp;
 			productReference = 5FFACA9729E436BE006507AD /* RickyAndMortyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -208,6 +230,9 @@
 				Base,
 			);
 			mainGroup = 5FFACA8E29E436BE006507AD;
+			packageReferences = (
+				5FFACAD229E706C0006507AD /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 5FFACA9829E436BE006507AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FFACAA229E436C2006507AD /* Preview Assets.xcassets in Resources */,
+				5FFACAD129E70656006507AD /* 39133-the-morty-dance-loader.json in Resources */,
 				5FFACA9F29E436C1006507AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +273,8 @@
 				5FFACACC29E6E9AF006507AD /* CharacterSubDetailView.swift in Sources */,
 				5FFACA9B29E436BE006507AD /* RickyAndMortyAppApp.swift in Sources */,
 				5FFACAB529E4C9D0006507AD /* Service.swift in Sources */,
+				5FFACAD629E7077A006507AD /* LottieAnimationView.swift in Sources */,
+				5FFACACE29E705DC006507AD /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +475,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FFACAD229E706C0006507AD /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FFACAD329E706C0006507AD /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FFACAD229E706C0006507AD /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5FFACA8F29E436BE006507AD /* Project object */;
 }
