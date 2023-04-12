@@ -90,10 +90,10 @@ struct HomeView: View {
                             }
                         }
                         
-                    } else if case .FAILURE(let error) = viewModel.currentStateCharacter {
+                    } else if case .FAILURE(_) = viewModel.currentStateCharacter {
                         VStack(alignment: .center) {
                             Spacer()
-                            Text(error)
+                            Text("Not found resident.")
                                 .font(.headline.bold())
                                 .multilineTextAlignment(.center)
                             Spacer()

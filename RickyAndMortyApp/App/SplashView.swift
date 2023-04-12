@@ -12,6 +12,7 @@ struct SplashView: View {
     let savedSplash = UserDefaults.standard.string(forKey: "isShowSplash")
     @State var isActive: Bool = false
     
+    
     var body: some View {
         ZStack {
             if self.isActive {

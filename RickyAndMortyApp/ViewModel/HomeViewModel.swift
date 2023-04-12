@@ -31,13 +31,13 @@ class HomeViewModel: ObservableObject {
     private var cancelables = Set<AnyCancellable>()
 
     init() {
-        getLocations(index: 0)
+        getLocations()
         
     }
 
-    func getLocations(index: Int) {
+    func getLocations() {
         self.currentStateLocation = .LOADING
-        Service.shared.getLocations(index)
+        Service.shared.getLocations(0)
             .sink { completion in
                 switch completion {
                 case .finished:
@@ -48,7 +48,6 @@ class HomeViewModel: ObservableObject {
             } receiveValue: { users in
                 self.currentStateLocation = .SUCCESS(users: users.results)
                 self.locations.append(contentsOf: users.results)
-                // Internet olmayınca uygulama çöküyo
                 self.getCharacters(index: 0)
                 
             }.store(in: &cancelables)
@@ -59,6 +58,7 @@ class HomeViewModel: ObservableObject {
         for resident in locations[index].residents {
             self.charactersID.append(String(resident.split(separator: "/").last!))
         }
+        self.charactersID.append("0")
         
         self.currentStateCharacter = .LOADING
         Service.shared.getCharacters(chractersID: charactersID)

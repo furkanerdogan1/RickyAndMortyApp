@@ -12,8 +12,8 @@ class Service {
 
     static let shared = Service()
 
-    func getLocations(_ index: Int) -> AnyPublisher<LocationSchema, Error> {
-        guard let url = URL(string: "https://rickandmortyapi.com/api/location?page=0") else {
+    func getLocations(_ page: Int) -> AnyPublisher<LocationSchema, Error> {
+        guard let url = URL(string: "https://rickandmortyapi.com/api/location?page=\(page)") else {
             return Fail(error: "Unable to generate url" as! Error).eraseToAnyPublisher()
         }
         return Future { promise in
@@ -24,7 +24,6 @@ class Service {
                             return promise(.failure("Something went wrong" as! Error))
                         }
                         let users = try JSONDecoder().decode(LocationSchema.self, from: data)
-                        print("Başarılı location")
                         return promise(.success(users))
                     } catch let error {
                         print("ErrorLocations: \(error.localizedDescription)")
@@ -35,31 +34,6 @@ class Service {
         }.eraseToAnyPublisher()
     }
     
-    func getCharactersID() -> AnyPublisher<[LocationSchemaResult], Error> {
-        
-        guard let url = URL(string: "https://rickandmortyapi.com/api/character/1") else {
-            return Fail(error: "Unable to generate url" as! Error).eraseToAnyPublisher()
-        }
-        
-        print("Url: \(url)")
-        return Future { promise in
-            URLSession.shared.dataTask(with: url) { (data, _, _) in
-                DispatchQueue.main.async {
-                    do {
-                        guard let data = data else {
-                            return promise(.failure("Something went wrong" as! Error))
-                        }
-                        let users = try JSONDecoder().decode([LocationSchemaResult].self, from: data)
-                        print("Başarılı location Id")
-                        return promise(.success(users))
-                    } catch let error {
-                        print("Errorv: \(error.localizedDescription)")
-                        return promise(.failure(error))
-                    }
-                }
-            }.resume()
-        }.eraseToAnyPublisher()
-    }
     
     func getCharacters(chractersID: [String]) -> AnyPublisher<[Character], Error> {
         let join = chractersID.joined(separator: "%2C")
@@ -68,16 +42,12 @@ class Service {
             return Fail(error: "Unable to generate url" as! Error).eraseToAnyPublisher()
         }
         
-        print("Url: \(url)")
         return Future { promise in
             URLSession.shared.dataTask(with: url) { (data, _, _) in
                 DispatchQueue.main.async {
                     do {
-                        guard let data = data else {
-                            return promise(.failure("Something went wrong" as! Error))
-                        }
+                        guard let data = data else { return }
                         let users = try JSONDecoder().decode([Character].self, from: data)
-                        print("Başarılı karakter")
                         return promise(.success(users))
                     } catch let error {
                         print("Errorv: \(error.localizedDescription)")
