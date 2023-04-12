@@ -18,6 +18,10 @@
 		5FFACABA29E4CB5E006507AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACAB929E4CB5E006507AD /* HomeView.swift */; };
 		5FFACABC29E4D7DE006507AD /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACABB29E4D7DE006507AD /* CharacterListView.swift */; };
 		5FFACABE29E4EEB7006507AD /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACABD29E4EEB7006507AD /* CharacterViewModel.swift */; };
+		5FFACAC529E6DED7006507AD /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACAC429E6DED7006507AD /* CharacterDetailView.swift */; };
+		5FFACAC729E6DF14006507AD /* CharacterHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACAC629E6DF14006507AD /* CharacterHeaderView.swift */; };
+		5FFACACA29E6E00E006507AD /* GradientColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACAC929E6E00E006507AD /* GradientColorData.swift */; };
+		5FFACACC29E6E9AF006507AD /* CharacterSubDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFACACB29E6E9AF006507AD /* CharacterSubDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		5FFACAB929E4CB5E006507AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5FFACABB29E4D7DE006507AD /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		5FFACABD29E4EEB7006507AD /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		5FFACAC429E6DED7006507AD /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		5FFACAC629E6DF14006507AD /* CharacterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterHeaderView.swift; sourceTree = "<group>"; };
+		5FFACAC929E6E00E006507AD /* GradientColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColorData.swift; sourceTree = "<group>"; };
+		5FFACACB29E6E9AF006507AD /* CharacterSubDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSubDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 				5FFACAAB29E4391F006507AD /* Model */,
 				5FFACAAA29E43914006507AD /* View */,
 				5FFACAAC29E4392A006507AD /* Api */,
+				5FFACAC829E6DFF2006507AD /* Data */,
 				5FFACA9E29E436C1006507AD /* Assets.xcassets */,
 				5FFACAA029E436C2006507AD /* Preview Content */,
 			);
@@ -91,6 +100,7 @@
 			children = (
 				5FFACA9A29E436BE006507AD /* RickyAndMortyAppApp.swift */,
 				5FFACAB929E4CB5E006507AD /* HomeView.swift */,
+				5FFACAC429E6DED7006507AD /* CharacterDetailView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -99,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				5FFACABB29E4D7DE006507AD /* CharacterListView.swift */,
+				5FFACAC629E6DF14006507AD /* CharacterHeaderView.swift */,
+				5FFACACB29E6E9AF006507AD /* CharacterSubDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +154,14 @@
 			children = (
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		5FFACAC829E6DFF2006507AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5FFACAC929E6E00E006507AD /* GradientColorData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +239,12 @@
 				5FFACAAE29E43DF7006507AD /* CharacterModel.swift in Sources */,
 				5FFACAB829E4CB13006507AD /* HomeViewModel.swift in Sources */,
 				5FFACABC29E4D7DE006507AD /* CharacterListView.swift in Sources */,
+				5FFACAC529E6DED7006507AD /* CharacterDetailView.swift in Sources */,
+				5FFACAC729E6DF14006507AD /* CharacterHeaderView.swift in Sources */,
 				5FFACAB329E4C8B3006507AD /* NetworkManager.swift in Sources */,
 				5FFACABA29E4CB5E006507AD /* HomeView.swift in Sources */,
+				5FFACACA29E6E00E006507AD /* GradientColorData.swift in Sources */,
+				5FFACACC29E6E9AF006507AD /* CharacterSubDetailView.swift in Sources */,
 				5FFACA9B29E436BE006507AD /* RickyAndMortyAppApp.swift in Sources */,
 				5FFACAB529E4C9D0006507AD /* Service.swift in Sources */,
 			);

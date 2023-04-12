@@ -45,8 +45,10 @@ struct CharacterListView: View {
                         self.genderImage = UIImage(named: "female")!
                     } else if self.character.gender == "Male" {
                         self.genderImage = UIImage(named: "male")!
-                    } else {
+                    } else if self.character.gender == "unknown" {
                         self.genderImage = UIImage(named: "question")!
+                    } else {
+                        self.genderImage = UIImage(named: "genderless")!
                     }
             }.padding(0)
         }

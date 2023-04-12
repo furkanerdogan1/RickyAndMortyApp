@@ -48,16 +48,20 @@ struct HomeView: View {
                         .padding(8.0)
                         .background {
                             RoundedRectangle(cornerRadius: 8)
-                                .fill(Material.regular)
+                                .fill(Color.blue)
                                 .matchedGeometryEffect(
                                     id: self.selectedIndex,
                                     in: namespace,
                                     isSource: false
+                                    
                                 )
+                                
+                                
                         }
                         .background {
                             RoundedRectangle(cornerRadius: 8)
                                 .fill(Material.thin)
+                                
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                     }
@@ -81,7 +85,9 @@ struct HomeView: View {
                     if case .LOADING = viewModel.currentStateCharacter {
                     } else if case .SUCCESS(let users) = viewModel.currentStateCharacter {
                         ForEach(users, id: \.id) { user in
-                            CharacterListView(character: user)
+                            NavigationLink(destination: FruitDetailView(character: user)) {
+                                CharacterListView(character: user)
+                            }
                         }
                         
                     } else if case .FAILURE(let error) = viewModel.currentStateCharacter {
