@@ -7,7 +7,7 @@ Bu proje Invio 2023 Çekirge Programı kapsamında yapılmıştır. Projede Swif
 
 ## Kütüphaneler
 
-LoaChat, düzgün çalışması için bir dizi kütüphane kullanır:
+Ricky And Morty, düzgün çalışması için bir dizi kütüphane kullanır:
 
 - [Lottie] - Lottie, iOS, macOS, tvOS, Android ve Web için vektör tabanlı animasyonları ve sanatı minimum kodla gerçek zamanlı olarak yerel olarak işleyen bir çapraz platform kitaplığıdır.
 
