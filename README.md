@@ -16,7 +16,7 @@ LoaChat, düzgün çalışması için bir dizi kütüphane kullanır:
 
 ## Kurulum
 
-İlk olarak proje dosyasını bilgisyarınıza indirin . Daha sonra uygulamayı çalıştırın.
+İlk olarak proje dosyasını bilgisyarınıza indirin. Daha sonra uygulamayı çalıştırın.
 
 ```sh
 open RickyAndMortyApp.xcodeproj
