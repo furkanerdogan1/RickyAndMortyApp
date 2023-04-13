@@ -3,7 +3,7 @@
 # Proje Hakkında
 
 
-Bu proje Invio 2023 Çekirge Programı kapsamında yapılmıştır. Projede SwiftUI kullanılmış, MVVM modeli benimsenmiştir. Uygulama light ve dark modu desteklemektedir.
+Bu proje Invio 2023 Çekirge Programı kapsamında yapılmıştır. Projede SwiftUI kullanılmış, MVVM mimarisi benimsenmiştir. Uygulama light ve dark modu desteklemektedir.
 
 ## Kütüphaneler
 
@@ -19,13 +19,14 @@ LoaChat, düzgün çalışması için bir dizi kütüphane kullanır:
 İlk olarak proje dosyasını bilgisyarınıza indirin . Daha sonra uygulamayı çalıştırın.
 
 ```sh
-open ChatApp.xcodeproj
+open RickyAndMortyApp.xcodeproj
 ```
 
 ## Uygulama Görüntüleri
 
 
-<img src="https://github.com/OrionInnovationTRTech/ChatApp/blob/main/screenshots/IMG_1911.PNG" width="276" height="597" />  <img src="https://github.com/OrionInnovationTRTech/ChatApp/blob/main/screenshots/IMG_1910.PNG" width="276" height="597" /> <img src="https://github.com/OrionInnovationTRTech/ChatApp/blob/main/screenshots/IMG_F13391F28D12-1.jpeg" width="276" height="597" /> <img src="https://github.com/OrionInnovationTRTech/ChatApp/blob/main/screenshots/IMG_1923.PNG" width="276" height="597" /> <img src="https://github.com/OrionInnovationTRTech/ChatApp/blob/main/screenshots/IMG_1924.PNG" width="276" height="597" />
+<img src="https://github.com/furkanerdogan1/RickyAndMortyApp/blob/main/ScreenShots/Ekran%20Resmi%202023-04-13%2000.12.00.png" width="310" height="597" />  <img src="https://github.com/furkanerdogan1/RickyAndMortyApp/blob/main/ScreenShots/Ekran%20Resmi%202023-04-13%2000.10.07.png" width="310" height="597" /> <img src="https://github.com/furkanerdogan1/RickyAndMortyApp/blob/main/ScreenShots/Ekran%20Resmi%202023-04-13%2000.12.15.png" width="310" height="597" /> <img src="https://github.com/furkanerdogan1/RickyAndMortyApp/blob/main/ScreenShots/Ekran%20Resmi%202023-04-13%2000.12.42.png" width="310" height="597" /> <img src="https://github.com/furkanerdogan1/RickyAndMortyApp/blob/main/ScreenShots/Ekran%20Resmi%202023-04-13%2000.14.22.png" width="597" height="370" />
+<img src="https://github.com/furkanerdogan1/RickyAndMortyApp/blob/main/ScreenShots/Ekran%20Resmi%202023-04-13%2000.16.09.png" width="597" height="390" /> <img src="https://github.com/furkanerdogan1/RickyAndMortyApp/blob/main/ScreenShots/Ekran%20Resmi%202023-04-13%2000.16.18.png" width="597" height="390" />
 
 
 
